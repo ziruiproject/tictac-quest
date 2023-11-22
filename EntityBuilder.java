@@ -1,28 +1,31 @@
 package TicTacQuest;
 
 public class EntityBuilder {
-    String name;
-    double health;
-    double attackDmg;
-    double luck;
+
+    private Entity entity = new Entity();
 
     public EntityBuilder setName(String name) {
-        this.name = name;
+        entity.name = name;
         return this;
     }
 
     public EntityBuilder setHealth(double health) {
-        this.health = health;
+        entity.health = health;
         return this;
     }
 
     public EntityBuilder setAtkDmg(double dmg) {
-        this.attackDmg = dmg;
+        entity.attackDmg = dmg;
         return this;
     }
 
     public EntityBuilder setLuck(double luck) {
-        this.luck = luck;
+        entity.luck = luck;
         return this;
     }
+
+    public Entity build() {
+        return entity;
+    }
+
 }
