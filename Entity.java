@@ -1,13 +1,11 @@
 package TicTacQuest;
 
 public class Entity {
-    String name;
-    double health;
-    double attackDmg;
 
-    Entity(String name, double health, double atk) {
+    Entity(String name, double health, double atk, double luck) {
         this.name = name;
         this.health = health;
         this.attackDmg = atk;
+        this.luck = luck;
     }
 }
