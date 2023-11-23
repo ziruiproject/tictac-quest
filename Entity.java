@@ -21,4 +21,8 @@ public class Entity {
     public void setLuck(double luck) {
         this.luck = luck;
     }
+
+    public void attacked(double dmg) {
+        this.health -= dmg;
+    }
 }
